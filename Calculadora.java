@@ -10,6 +10,10 @@ public class Calculadora {
     public Calculadora() {
 
     }
+
+    public Calculadora(double x) {
+        this.resultado = x;
+    }
     // Metodos
 
     public void sumar(double x){
