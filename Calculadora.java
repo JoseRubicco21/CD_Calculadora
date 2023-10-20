@@ -19,7 +19,7 @@ public class Calculadora {
         this.resultado -= x;
     }
      public void dividr(double x){
-        this.resultado = resultado / x;
+        this.resultado = this.resultado / x;
     }
      public void multiplicar(double x){
         this.resultado *= x;
@@ -28,6 +28,6 @@ public class Calculadora {
         this.resultado = 0;
     }
     public void imprimir(){
-        System.out.println("El resultado es: " + resultado);
+        System.out.println("El resultado es: " + this.resultado);
     }
 }
