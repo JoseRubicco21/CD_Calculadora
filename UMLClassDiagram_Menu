@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2023-10-23T09:30:58" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
+<XMI verified="false" xmi.version="1.2" timestamp="2023-10-23T09:50:58" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -39,20 +39,21 @@
       <UML:Class name="Menu" namespace="Logical_View" xmi.id="uThSa3ZUE3DeY" isLeaf="false" isRoot="false" isAbstract="false" visibility="public" isSpecification="false">
        <UML:Classifier.feature>
         <UML:Attribute name="seleccion" xmi.id="uR8kBUHO2SU57" type="uhMXre9zhcYBU" visibility="private" isSpecification="false"/>
-        <UML:Operation isQuery="false" name="imprimir" xmi.id="uS7ubYxVHTmmr" isLeaf="false" isRoot="false" isAbstract="false" isVirtual="false" visibility="public" isSpecification="false" isOverride="false" isInline="false"/>
+        <UML:Operation isQuery="false" name="imprimir" xmi.id="uS7ubYxVHTmmr" isLeaf="false" isRoot="false" isAbstract="false" isVirtual="false" visibility="private" isSpecification="false" isOverride="false" isInline="false"/>
         <UML:Operation isQuery="false" name="getSeleccion" xmi.id="ui9QI32uisTJx" isLeaf="false" isRoot="false" isAbstract="false" isVirtual="false" visibility="public" isSpecification="false" isOverride="false" isInline="false">
          <UML:BehavioralFeature.parameter>
           <UML:Parameter kind="return" xmi.id="uhDBCR5LyE2y8" type="uhMXre9zhcYBU"/>
          </UML:BehavioralFeature.parameter>
         </UML:Operation>
+        <UML:Operation isQuery="false" name="getSeleccionValida" xmi.id="u2VFXrzBiiIk5" isLeaf="false" isRoot="false" isAbstract="false" isVirtual="false" visibility="public" isSpecification="false" isOverride="false" isInline="false"/>
        </UML:Classifier.feature>
       </UML:Class>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram showstereotype="1" isopen="1" xmi.id="uBC6WCQCOQ94X" zoom="100" snapcsgrid="0" documentation="" usefillcolor="1" showatts="1" linewidth="0" fillcolor="#ffff00" showattribassocs="1" showscope="1" textcolor="#000000" griddotcolor="#d3d3d3" showattsig="1" canvasheight="68" name="diagrama de clases" type="1" snapx="25" font="Ubuntu,11,-1,5,50,0,0,0,0,0" showpackage="1" snapy="25" showgrid="0" canvaswidth="149" backgroundcolor="#ffffff" snapgrid="0" showops="1" showopsig="1" showpubliconly="0" linecolor="#ff0000" localid="-1">
+       <diagram showstereotype="1" isopen="1" xmi.id="uBC6WCQCOQ94X" zoom="100" snapcsgrid="0" documentation="" usefillcolor="1" showatts="1" linewidth="0" fillcolor="#ffff00" showattribassocs="1" showscope="1" textcolor="#000000" griddotcolor="#d3d3d3" showattsig="1" canvasheight="85" name="diagrama de clases" type="1" snapx="25" font="Ubuntu,11,-1,5,50,0,0,0,0,0" showpackage="1" snapy="25" showgrid="0" canvaswidth="162" backgroundcolor="#ffffff" snapgrid="0" showops="1" showopsig="1" showpubliconly="0" linecolor="#ff0000" localid="-1">
         <widgets>
-         <classwidget showstereotype="1" xmi.id="uThSa3ZUE3DeY" width="149" height="68" usefillcolor="1" usesdiagramusefillcolor="0" linewidth="0" fillcolor="#ffff00" showscope="1" textcolor="#000000" isinstance="0" usesdiagramfillcolor="0" font="Ubuntu,11,-1,5,50,0,0,0,0,0" autoresize="1" x="-106" showopsigs="601" showpackage="1" showattributes="1" showoperations="1" showattsigs="601" showpubliconly="0" linecolor="#ff0000" localid="ubPEh86yYooM9" y="-95"/>
+         <classwidget showstereotype="1" xmi.id="uThSa3ZUE3DeY" width="162" height="85" usefillcolor="1" usesdiagramusefillcolor="0" linewidth="0" fillcolor="#ffff00" showscope="1" textcolor="#000000" isinstance="0" usesdiagramfillcolor="0" font="Ubuntu,11,-1,5,50,0,0,0,0,0" autoresize="1" x="-106" showopsigs="601" showpackage="1" showattributes="1" showoperations="1" showattsigs="601" showpubliconly="0" linecolor="#ff0000" localid="ubPEh86yYooM9" y="-95"/>
         </widgets>
         <messages/>
         <associations/>
@@ -76,7 +77,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings documentation="" viewid="uBC6WCQCOQ94X" uniqueid="uhDBCR5LyE2y8"/>
+  <docsettings documentation="" viewid="uBC6WCQCOQ94X" uniqueid="u2VFXrzBiiIk5"/>
   <listview>
    <listitem id="Views" type="800" open="1">
     <listitem id="Entity_Relationship_Model" type="836" open="1"/>
@@ -87,6 +88,7 @@
      <listitem id="uBC6WCQCOQ94X" type="807" open="0" label="diagrama de clases"/>
      <listitem id="uThSa3ZUE3DeY" type="813" open="1">
       <listitem id="ui9QI32uisTJx" type="815" open="0"/>
+      <listitem id="u2VFXrzBiiIk5" type="815" open="0"/>
       <listitem id="uS7ubYxVHTmmr" type="815" open="0"/>
       <listitem id="uR8kBUHO2SU57" type="814" open="0"/>
      </listitem>
