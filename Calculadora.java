@@ -3,7 +3,7 @@
  */
 public class Calculadora {
 
-    public double resultado = 0;
+    private double resultado = 0;
 
     // Constructor 
 
@@ -15,6 +15,14 @@ public class Calculadora {
         this.resultado = x;
     }
     // Metodos
+
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
+    }
+
+    public double getResultado() {
+        return this.resultado;
+    }
 
     public void sumar(double x){
         this.resultado += x;
