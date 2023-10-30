@@ -30,7 +30,7 @@ public class Calculadora {
      public void restar(double x){
         this.resultado -= x;
     }
-     public void dividr(double x){
+     public void dividir(double x){
         this.resultado = this.resultado / x;
     }
      public void multiplicar(double x){

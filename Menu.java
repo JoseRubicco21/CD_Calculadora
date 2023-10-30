@@ -7,23 +7,27 @@ public class Menu {
         return seleccion;
     }
 
-    /*
+    
     public void setSeleccion(int seleccion){
-        this.seleccion = (seleccion <= 4 & seleccion >= 0) ? this.seleccion = seleccion:-1;
+        this.seleccion = seleccion; 
     }
-    */
 
-    private void imprimir(){
-        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]");
-        Scanner sc  =  new Scanner(System.in);
-        int seleccion = sc.nextInt();
+    private void imprimir(Scanner sc){
+        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]\nSalir [5]");
+        int seleccion = Integer.parseInt(sc.nextLine());
         this.seleccion = (seleccion <= 4 & seleccion >= 0) ? this.seleccion = seleccion:-1;
     }
 
-    public int getSeleccionValida (){
-        while(this.seleccion < 0 | this.seleccion > 4) {
-        this.imprimir();
-        }
+    public int getSeleccionValida (Scanner sc){
+      while(this.seleccion < 0 | this.seleccion > 4) {
+        this.imprimir(sc);
+        } 
         return this.seleccion;
     }
+
+    public double getNumvalido(Scanner sc){
+        System.out.println("Introduzca el numero sobre el que operar");
+        return Double.parseDouble(sc.nextLine());
+    }
+
 }

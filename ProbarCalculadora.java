@@ -6,7 +6,7 @@ public class ProbarCalculadora {
         calculadora.imprimir();
         calculadora.restar(2);
         calculadora.imprimir();
-        calculadora.dividr(2);
+        calculadora.dividir(2);
         calculadora.imprimir();
         calculadora.multiplicar(4);
         calculadora.imprimir();
@@ -19,7 +19,7 @@ public class ProbarCalculadora {
         calculadora2.imprimir();
         calculadora2.restar(2);
         calculadora2.imprimir();
-        calculadora2.dividr(2);
+        calculadora2.dividir(2);
         calculadora2.imprimir();
         calculadora2.multiplicar(4);
         calculadora2.imprimir();
