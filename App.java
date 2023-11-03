@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class App {
-    Calculadora calculadora;
-    Menu menu;
-    Scanner sc;
+    private Calculadora calculadora;
+    private Menu menu;
+    private Scanner sc;
 
     App(){
         this.calculadora = new Calculadora();
