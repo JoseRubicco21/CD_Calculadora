@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class App {
-    private Calculadora calculadora;
+    private CalculadoraCompleja calculadora;
     private Menu menu;
     private Scanner sc;
 
     App(){
-        this.calculadora = new Calculadora();
+        this.calculadora = new CalculadoraCompleja();
         this.menu = new Menu();
         this.sc = new Scanner(System.in);
     }
@@ -42,6 +42,16 @@ public class App {
                     this.menu.setSeleccion(-1);
                 break;    
             case 5:
+                    calculadora.cuadrado();
+                    calculadora.imprimir();
+                    this.menu.setSeleccion(-1);
+                break;
+            case 6: 
+                    calculadora.raiz();
+                    calculadora.imprimir();
+                    this.menu.setSeleccion(-1);
+                    break;
+            case 7:
                     isFinished = true;
                 break;
             default:
