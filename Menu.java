@@ -14,13 +14,13 @@ public class Menu {
     }
 
     private void imprimir(Scanner sc){
-        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]\nCuadrado [5]\nRaíz [6]\nSalir [7]");
+        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]\nCuadrado [5]\nRaíz [6]\nDeshacer [7]\nSalir [8]");
         int seleccion = sc.nextInt();
-        this.seleccion = (seleccion <= 7 & seleccion >= 0) ? this.seleccion = seleccion:-1;
+        this.seleccion = (seleccion <= 8 & seleccion >= 0) ? this.seleccion = seleccion:-1;
     }
 
     public int getSeleccionValida (Scanner sc){
-      while(this.seleccion < 0 | this.seleccion > 7) {
+      while(this.seleccion < 0 | this.seleccion > 8) {
         this.imprimir(sc);
         } 
         return this.seleccion;

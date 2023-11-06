@@ -51,12 +51,18 @@ public class App {
                     calculadora.imprimir();
                     this.menu.setSeleccion(-1);
                     break;
-            case 7:
+            case 7: 
+                    calculadora.deshacer();
+                    calculadora.imprimir();
+                    this.menu.setSeleccion(-1);
+                break;
+            case 8:
                     isFinished = true;
                 break;
             default:
                 break;
             }
+     
         }
     }
 }
