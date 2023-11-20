@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class App {
-    private CalculadoraCompleja calculadora;
+    private Calculadora calculadora;
     private Menu menu;
     private Scanner sc;
 
@@ -27,6 +27,7 @@ public class App {
                     this.menu.setSeleccion(-1);
                 break;
             case 2:
+
                     calculadora.restar(menu.getNumvalido(sc));
                     calculadora.imprimir();
                     this.menu.setSeleccion(-1);
@@ -37,27 +38,13 @@ public class App {
                     this.menu.setSeleccion(-1);
                 break;
             case 4:
+
                     calculadora.dividir(menu.getNumvalido(sc));
                     calculadora.imprimir();
                     this.menu.setSeleccion(-1);
-                break;    
-            case 5:
-                    calculadora.cuadrado();
-                    calculadora.imprimir();
-                    this.menu.setSeleccion(-1);
                 break;
-            case 6: 
-                    calculadora.raiz();
-                    calculadora.imprimir();
-                    this.menu.setSeleccion(-1);
-                    break;
-            case 7: 
-                    calculadora.deshacer();
-                    calculadora.imprimir();
-                    this.menu.setSeleccion(-1);
-                break;
-            case 8:
-                    isFinished = true;
+            case 5: 
+                System.exit(0);
                 break;
             default:
                 break;

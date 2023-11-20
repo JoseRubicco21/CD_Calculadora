@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
-    private int seleccion = -1;
+    protected int seleccion = -1;
 
     public int getSeleccion() {
         return seleccion;
@@ -13,10 +13,10 @@ public class Menu {
         this.seleccion = seleccion; 
     }
 
-    private void imprimir(Scanner sc){
-        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]\nCuadrado [5]\nRaíz [6]\nDeshacer [7]\nSalir [8]");
+    protected void imprimir(Scanner sc){
+        System.out.println("¿Qué operación desea hacer?\nReset [0]\nSumar [1]\nRestar [2]\nMultiplicar [3]\nDividir [4]\nSalir [5]");
         int seleccion = sc.nextInt();
-        this.seleccion = (seleccion <= 8 & seleccion >= 0) ? this.seleccion = seleccion:-1;
+        this.seleccion = (seleccion <= 5 & seleccion >= 0) ? this.seleccion = seleccion:-1;
     }
 
     public int getSeleccionValida (Scanner sc){
